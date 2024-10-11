@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[ELICIT] Secret Society</title>
+    <link rel="stylesheet" href="/static/output.css">
+</head>
+
+<body class="bg-background">
+    <!-- made by krish sharma [https://krishsharma.in] -->
+
+    <div class="flex w-screen h-screen overflow-hidden relative justify-center items-center">
+        <img class="h-screen w-auto object-cover spinn" src="/static/magic_circle.png">
+    </div>
+
+    <div class="z-40 flex w-screen h-screen bg-background bg-opacity-80 absolute left-0 top-0">
+        <div class="w-full">
+            {{archive | safe}}
+            <hr class="h-[1px] bg-text">
+        </div>
+    </div>
+
+    <div class="fixed bottom-2 right-2 z-50">
+        <img class="w-[64px] md:w-[100px]" src="/static/elicit_logo.png">
+    </div>
+
+    {% include 'components/footer.html' %}
+    
+
+     <script src="/static/handler.js"></script>
+</body>
+
+</html>

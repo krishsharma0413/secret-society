@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[ELICIT] Secret Society</title>
+    <link rel="stylesheet" href="/static/output.css">
+</head>
+<body class="bg-background overflow-hidden">
+    <!-- made by krish sharma [https://krishsharma.in] -->
+    
+    <div class="flex w-screen h-screen overflow-hidden relative justify-center items-center">
+        <img class="h-screen w-auto object-cover spinn" src="/static/magic_circle.png">
+    </div>
+
+    <div  class="absolute bottom-2 right-2">
+        <img class="w-[64px] md:w-[100px]" src="/static/elicit_logo.png">
+    </div>
+    <div class="flex w-screen h-screen justify-center place-items-center absolute left-0 top-0">
+        <div class="text-left w-[90%] md:w-[65%] bg-opacity-75 bg-primary p-4 rounded-lg border-2 border-primary">
+            <h1 class="text-text font-bold font-stalber text-[100px] leading-none text-center">admin
+            </h1>
+            <form method="get" action="/admin/register" class="text-center">
+                <input id="username" type="username" name="username" placeholder="Team ID" class="border-2 border-background w-full rounded-lg font-bokor text-2xl px-2 py-2">
+                <input id="password" name="password" placeholder="password" class="border-2 my-2 border-background w-full rounded-lg font-bokor text-2xl px-2 py-2">            
+                <button type="submit" class="bg-background text-text font-bokor rounded-lg text-3xl py-2 px-4">
+                    CREATE
+                </button>
+            </form>
+        </div>
+    </div>
+
+    {% include 'components/footer.html' %}
+</body>
+</html>
