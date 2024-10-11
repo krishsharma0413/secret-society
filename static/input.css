@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
+npx tailwindcss build static/input.css -o static/output.css --watch
+*/
+
+body, html {
+  margin:0;
+  padding:0;
+}
+
+@font-face {
+    font-family: "stalber";
+    src: url('./stalber.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "bokor";
+    src: url('./Bokor-Regular.ttf') format('truetype');
+}
+.spinn{
+  max-width: none; 
+    animation: spin 80s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
