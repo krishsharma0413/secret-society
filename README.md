@@ -2,6 +2,7 @@
 MUJ ACM's Elicit RTE event: Secret Society, an offline in-person treasure hunt. The website was created for scanning QRs and to prevent cheaters from cheating or participants from scanning random QRs and going out of their own story.
 
 PWA was also available for better experience.
+**website:** https://elicit-society.xyz (now hosting the static version for saving server cost.)
 
 ## Database Schema
 MongoDB had the following collections.
